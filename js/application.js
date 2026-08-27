@@ -695,20 +695,20 @@ loopevent();
       RouletteLayout(1060, 55,beteuro)
     }	
     else if (
-  worksheetData[i][BetPosition].formattedValue == "FIRST_12" ||
-  worksheetData[i][BetPosition].formattedValue == "DOZEN_FIRST"
+  String(worksheetData[i][BetPosition]?.formattedValue ?? "").trim().toUpperCase() == "FIRST_12" ||
+  String(worksheetData[i][BetPosition]?.formattedValue ?? "").trim().toUpperCase() == "DOZEN_FIRST"
 ) {
   RouletteLayout(250, 340, beteuro)
 }
 else if (
-  worksheetData[i][BetPosition].formattedValue == "SECOND_12" ||
-  worksheetData[i][BetPosition].formattedValue == "DOZEN_SECOND"
+  String(worksheetData[i][BetPosition]?.formattedValue ?? "").trim().toUpperCase() == "SECOND_12" ||
+  String(worksheetData[i][BetPosition]?.formattedValue ?? "").trim().toUpperCase() == "DOZEN_SECOND"
 ) {
   RouletteLayout(560, 340, beteuro)
 }
 else if (
-  worksheetData[i][BetPosition].formattedValue == "THIRD_12" ||
-  worksheetData[i][BetPosition].formattedValue == "DOZEN_THIRD"
+  String(worksheetData[i][BetPosition]?.formattedValue ?? "").trim().toUpperCase() == "THIRD_12" ||
+  String(worksheetData[i][BetPosition]?.formattedValue ?? "").trim().toUpperCase() == "DOZEN_THIRD"
 ) {
   RouletteLayout(870, 340, beteuro)
 }  
