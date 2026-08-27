@@ -694,15 +694,24 @@ loopevent();
     else if (worksheetData[i][BetPosition].formattedValue == "COLUMN_THIRD"){
       RouletteLayout(1060, 55,beteuro)
     }	
-    else if (worksheetData[i][BetPosition].formattedValue == "FIRST_12"){
-      RouletteLayout(250, 340,beteuro)
-    }	
-    else if (worksheetData[i][BetPosition].formattedValue == "SECOND_12"){
-      RouletteLayout(560, 340,beteuro)
-    }	
-    else if (worksheetData[i][BetPosition].formattedValue == "THIRD_12"){
-      RouletteLayout(870, 340,beteuro)
-    }		
+    else if (
+  worksheetData[i][BetPosition].formattedValue == "FIRST_12" ||
+  worksheetData[i][BetPosition].formattedValue == "DOZEN_FIRST"
+) {
+  RouletteLayout(250, 340, beteuro)
+}
+else if (
+  worksheetData[i][BetPosition].formattedValue == "SECOND_12" ||
+  worksheetData[i][BetPosition].formattedValue == "DOZEN_SECOND"
+) {
+  RouletteLayout(560, 340, beteuro)
+}
+else if (
+  worksheetData[i][BetPosition].formattedValue == "THIRD_12" ||
+  worksheetData[i][BetPosition].formattedValue == "DOZEN_THIRD"
+) {
+  RouletteLayout(870, 340, beteuro)
+}  
     else if (worksheetData[i][BetPosition].formattedValue == "BLACK"){
       RouletteLayout(638, 420,beteuro)
     }		
